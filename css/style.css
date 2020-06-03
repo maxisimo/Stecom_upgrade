@@ -1,0 +1,83 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  background-color: #F7F9F9;
+  color: #4D425D;
+  line-height: 1.8;
+}
+
+/* Styles from https://www.w3schools.com/w3css/default.asp, thanks to them ! */
+.center {
+	text-align:center!important
+}
+.carnation-fill {
+	color:#fff!important;
+	background-color:#F16359!important
+}
+.mulled-wine-fill {
+	color:#F7F9F9!important;
+	background-color:#4D425D!important
+}
+/* ------------------------------------------------------------------------- */
+
+/* Create a Parallax Effect */
+.img-1, .img-2, .img-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Full height) */
+.img-1{
+	background-image: url(../img/sky2.jpg);
+	height: 100%;
+}
+
+/* Second image (L'Entreprise : Références / Partenaires) */
+.img-2 {
+  background-image: url(../img/paris.jpg);
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.img-3 {
+  background-image: url("../img/contact.jpg");
+  min-height: 400px;
+}
+
+/* Affichage des flexboxs sur grand ecran */
+@media screen and (min-width: 641px) {
+	#conteneur
+	{
+		display: flex;
+		justify-content: space-around;
+	}
+	.space {
+		display: none;
+	}
+}
+@media screen and (min-width: 641px) and (max-width: 1350px) {
+	/* Trace un trait séparant références et partenaires */
+	.element2 {
+		border-left: solid;
+	}
+}
+
+#conteneurChild
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .img-1, .img-2, .img-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}

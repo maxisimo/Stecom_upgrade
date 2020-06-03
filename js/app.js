@@ -11,7 +11,7 @@ particlesJS.load('particles-js', 'particles.json', function() {
 
 /* Otherwise just put the config content (json): */
 
-particlesJS('accueil',
+particlesJS('home',
   
   {
     "particles": {
@@ -23,7 +23,7 @@ particlesJS('accueil',
         }
       },
       "color": {
-        "value": "#4840c8" //violet : #4840c8 | orange : #FE9927
+        "value": "#FE9927" //violet : #4840c8 | orange : #FE9927 | red : #F16359
       },
       "shape": {
         "type": "circle", // `"edge"` / `"triangle"` / `"polygon"` / `"star"`
@@ -63,17 +63,17 @@ particlesJS('accueil',
       "line_linked": { //lignes qui lient les particules
         "enable": true,
         "distance": 150,
-        "color": "#ffffff",
+        "color": "#F16359",
         "opacity": 0.6,
         "width": 1
       },
       "move": { // Mouvement des particules
         "enable": true,
-        "speed": 5,
-        "direction": "none",
+        "speed": 2,
+        "direction": "right",
         "random": false,
         "straight": false,
-        "out_mode": "bounce",
+        "out_mode": "out",
         "bounce": false,
         "attract": {
           "enable": false,
@@ -86,7 +86,7 @@ particlesJS('accueil',
       "detect_on": "canvas",
       "events": {
         "onhover": {
-          "enable": true,
+          "enable": false,
           "mode": "repulse" // grab / bubble / repulse / ["grab", "bubble"]
         },
         "onclick": {

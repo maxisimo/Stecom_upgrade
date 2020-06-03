@@ -1,126 +1,128 @@
 <!doctype html>
-<html>
 	<head>
 		<title>Stecom</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="./img/logos/stecom_logo.ico" />
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link href="style.css" rel="stylesheet" type="text/css">
+		<link href="./css/style.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
-		<!-- Navbar (sit on top) -->
+		<!-- Navbar -->
 		<div class="w3-top">
-		  <div class="w3-bar" id="myNavbar">
+		  <div style="color:#F16359" class="w3-bar" id="myNavbar">
+			<!-- Show the dropdown menu on small screens -->
 			<a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
 			  <i class="fa fa-bars"></i>
 			</a>
-			<a href="#accueil" class="w3-bar-item w3-button">ACCUEIL</a>
-			<a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> À PROPOS</a>
-			<a href="#references" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> RÉFÉRENCES</a>
-			<a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-			<a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-			  <i class="fa fa-search"></i>
-			</a>
+			<a href="#home" class="w3-bar-item w3-button lang" key="navBarHome">ACCUEIL</a>
+			<a href="#about" class="w3-bar-item w3-button w3-hide-small lang-spe" key="navBarAbout"><i class="fa fa-user"></i> À PROPOS</a>
+			<a href="#company" class="w3-bar-item w3-button w3-hide-small lang-spe" key="navBarCompany"><i class="fa fa-th"></i> L'ENTREPRISE</a>
+			<a href="#contact" class="w3-bar-item w3-button w3-hide-small lang-spe" key="navBarContact"><i class="fa fa-envelope"></i> CONTACT</a>
+			<a id="fr" class="w3-bar-item w3-button translate w3-right w3-hide-small">Fr</a>
+			<a id="en" class="w3-bar-item w3-button translate w3-right w3-hide-small">En</a>
 		  </div>
 
 		  <!-- Navbar on small screens -->
-		  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-			<a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">À PROPOS</a>
-			<a href="#references" class="w3-bar-item w3-button" onclick="toggleFunction()">RÉFÉRENCES</a>
-			<a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-			<a href="#" class="w3-bar-item w3-button">RECHERCHE</a>
+		  <div  style="color:#F16359" id="navDemo" class="w3-bar-block carnation-fill w3-hide w3-hide-large w3-hide-medium">
+			<a href="#about" class="w3-bar-item w3-button lang" onclick="toggleFunction()" key="navBarAbout">À PROPOS</a>
+			<a href="#company" class="w3-bar-item w3-button lang" onclick="toggleFunction()" key="navBarCompany">L'ENTREPRISE</a>
+			<a href="#contact" class="w3-bar-item w3-button lang" onclick="toggleFunction()" key="navBarContact">CONTACT</a>
+			<a id="fr" class="w3-bar-item w3-button translate translate-spe" onclick="toggleFunction()">FRANÇAIS</a>
+			<a id="en" class="w3-bar-item w3-button translate translate-spe" onclick="toggleFunction()">ENGLISH</a>
 		  </div>
 		</div>
 
-		<!-- Particle.js on small screen -->
-		<div class="img-1 w3-display-container" id="accueil">
+		<!-- Home + Particle.js -->
+		<div class="img-1 w3-display-container" id="home">
 			<div class="w3-display-middle" style="white-space:nowrap;">
-				<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><span>STECOM</span></span>
-				<!-- <span class="w3-center w3-xxxlarge w3-wide w3-animate-opacity"><span class="w3-hide-small">STECOM</span></span> -->
+				<span class="center w3-xxxlarge w3-wide w3-text-white w3-animate-opacity"><span>STECOM</span></span>
 			</div>
-			<script src="./particles.js"></script>
-			<script src="./app.js"></script>
 		</div>
-		
+
 		<!-- Container (About Section) -->
 		<div class="w3-content w3-container w3-padding-64" id="about">
-			<h3 class="w3-center">BIENVENUE CHEZ STECOM</h3>
-			<p class="w3-center"><em>Ip ready</em></p>
-			<p>Chez STECOM, le personnel est hautement qualifié ! Ingénieurs reconnus pour leur professionnalisme dans les domaines aussi variés que la vidéosurveillance, le traitement vidéo sur IP, les réseaux informatiques
+			<h3 style="color:#F16359" class="center lang" key="about-h3">BIENVENUE CHEZ STECOM</h3>
+			<p class="center"><em>Ip ready</em></p>
+			<p class="lang" key="about-p1">Chez STECOM, le personnel est hautement qualifié ! Ingénieurs reconnus pour leur professionnalisme dans les domaines aussi variés que la vidéosurveillance, le traitement vidéo sur IP, les réseaux informatiques
 			et télécoms, la sonorisation de sécurité, les télécommunications. Ces expériences ont permis d'accumuler des compétences, de développer des synergies et de faire de STECOM l'une des toutes meilleures sociétés sur
 			des marchés aussi variés que le stationnement, ou l'hostpitalité avec des références prestigieuses et fidèles telles que SAEMES, Ecole des mines, Parkelis, Hôtel St James ...</p>
 			<div class="w3-row">
-				<div class="w3-col m6 w3-center w3-padding-large">
-					<p><b>Vidéosurveillance, services multimédias, contrôle d’accès, sonorisation, interphonie, guidage à la place… </b></p>
-					<img src="./img/logos/stecom_logo.png" class="w3-round w3-image" alt="Logo" width="500" height="333">
+				<div class="w3-col m6 center w3-padding-large">
+					<p style="color:#F16359" class="lang" key="about-p2"><b>Vidéosurveillance, services multimédias, contrôle d’accès, sonorisation, interphonie, guidage à la place… </b></p>
+					<img src="./img/logos/stecom_logo.jpg" class="w3-round w3-image" alt="Logo" width="500" height="333">
 				</div>
 
 				<!-- Hide this text on small devices -->
 				<div class="w3-col m6 w3-hide-small w3-padding-large">
-					<p>STECOM conçoit, installe et entretien des systèmes de sécurité incendie, contrôle d’accès, interphonie,
+					<p class="lang" key="about-p3">STECOM conçoit, installe et entretien des systèmes de sécurité incendie, contrôle d’accès, interphonie,
 					sonorisation pour les secteurs industriels tertiaires, transports et environnement. Associé à des équipements de pointe et une maintenance d’exception, STECOM vous aide à maîtriser toute la chaîne de mise en
 					sécurité de vos sites aux meilleurs coûts et vous garanti une simplicité d’exploitation de vos systèmes.</p><br />
-					<p><b>Notre mission est de proposer à nos clients des solutions techniques adaptées pour améliorer leur compétitivité.</b></p>
+					<p style="color:#F16359" class="lang" key="about-p4"><b>Notre mission est de proposer à nos clients des solutions techniques adaptées pour améliorer leur compétitivité.</b></p>
 				</div>
 			</div>
-			<p>STECOM vous propose des gammes complètes de produits totalement en adéquation avec la réglementation quelque soit le site à protéger : parkings couverts – structures d’accueil pour personnes âgées – hôtels –
+			<p class="lang" key="about-p5">STECOM vous propose des gammes complètes de produits totalement en adéquation avec la réglementation quelque soit le site à protéger : parkings couverts – structures d’accueil pour personnes âgées – hôtels –
 			restaurants – salles de spectacle – administrations – banques – bureaux … Des produits et accessoires disponibles et aux meilleurs coûts : par des relations privilégiés avec les grands constructeurs, STECOM vous
 			fait bénéficier des meilleurs prix sur une large gamme de produits agréés et disponibles.</p>
-			<p class="w3-large w3-center w3-padding-16">Spécialisations:</p>
-			<p class="w3-wide"><i class="fa fa-video-camera"></i>Vidéosurveillance</p>
+			<p style="color:#F16359" class="w3-large center w3-padding-16 lang" key="about-p6">Spécialisations:</p>
+			<p style="color:#F16359" class="w3-wide lang-spe about-p7" key="about-p7"><i class="fa fa-video-camera"></i>Vidéosurveillance</p>
 			<div class="w3-light-grey">
-				<div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+				<div class="w3-container w3-padding-small carnation-fill center" style="width:90%">90%</div>
 			</div>
-			<p class="w3-wide"><i class="fa fa-laptop"></i>Contrôle d'accès</p>
+			<p style="color:#F16359" class="w3-wide lang-spe about-p8" key="about-p8"><i class="fa fa-laptop"></i>Contrôle d'accès</p>
 			<div class="w3-light-grey">
-				<div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+				<div class="w3-container w3-padding-small carnation-fill center" style="width:85%">85%</div>
 			</div>
-			<p class="w3-wide"><i class="fa fa-tv"></i>Services multimédias</p>
+			<p style="color:#F16359" class="w3-wide lang-spe about-p9" key="about-p9"><i class="fa fa-tv"></i>Services multimédias</p>
 			<div class="w3-light-grey">
-				<div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+				<div class="w3-container w3-padding-small carnation-fill center" style="width:75%">75%</div>
 			</div>
 		</div>
 
-		<!-- Barre des réalisations -->
-		<div class="w3-row w3-center w3-dark-grey w3-padding-16">
-		  <div class="w3-quarter w3-section">
+		<!-- Success bar -->
+		<div class="w3-row center mulled-wine-fill w3-padding-16">
+		  <div class="w3-quarter w3-section lang-spe partners" key="successPartners">
 			<span class="w3-xlarge">6+</span><br>
 			Partenaires
 		  </div>
-		  <div class="w3-quarter w3-section">
+		  <div class="w3-quarter w3-section lang-spe projects">
 			<span class="w3-xlarge">55+</span><br>
 			Projets
 		  </div>
-		  <div class="w3-quarter w3-section">
+		  <div class="w3-quarter w3-section lang-spe clients">
 			<span class="w3-xlarge">89+</span><br>
 			Clients Satisfaits
 		  </div>
-		  <div class="w3-quarter w3-section">
+		  <div class="w3-quarter w3-section lang-spe sites">
 			<span class="w3-xlarge">150+</span><br>
 			Chantiers
 		  </div>
 		</div>
 
-		<!-- Second Parallax Image with References Text -->
+		<!-- Second Parallax Image with l'Entreprise Text -->
 		<div class="img-2 w3-display-container w3-opacity-min">
 		  <div class="w3-display-middle">
-			<span class="w3-padding-large w3-black w3-xxlarge w3-text-white w3-wide">Références</span>
+			<span class="w3-xxlarge w3-wide w3-text-white">L'ENTREPRISE</span>
 		  </div>
 		</div>
 
-		<!-- Container (Références Section) -->
-		<div class="w3-container w3-padding-64" id="references">
-
-			<!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+		<!-- Container (Entreprise Section) -->
+		<div class="w3-container w3-padding-64" id="company">
+			<div class="w3-content">
+				<h3 style="color:#F16359" class="center">L'ENTREPRISE</h3>
+				<p class="center">Avec plus de 15ans d'expérience et une situation financère solide,  STECOM est une société au capital de 100 000 €. L'implantation stratégique de ses bureaux parisien lui confère une
+				excellente réactivité vers ses principaux clients et un confort de travail unique.<br />Grâce à ses compétences en ingénierie électrique, électronique, informatique et télécoms, STECOM a su conquérir des
+				marchés tels que :<br />hôtels, banques, assurances, SSII, parkings... où la sécurité des biens et des personnes est l'une des priorités du moment.</p><br /><hr /><br />
+			</div>
 			<div id="conteneur">
-				<div class="element 1">
-					<h3 class="w3-center">REFERENCES</h3>
+				<div class="element1">
+					<h3 style="color:#F16359" class="center">REFERENCES</h3>
 					<div id="conteneurChild">
 						<div class="w3-col m3">
 							<a href="">
-								<img src="./img/logos/Vinci.jpg" style="width:100%" class="w3-hover-opacity" alt="Vinci">
+								<img src="./img/logos/Saemes.jpg" style="width:100%" class="w3-hover-opacity" alt="Saemes">
 							</a>
 						</div>
 
@@ -146,35 +148,30 @@
 
 						<div class="w3-col m3">
 							<a href="">
-								<img src="./img/logos/Lamy.jpg" style="width:100%" class="w3-hover-opacity" alt="Lamy">
+								<img src="./img/logos/Mines.jpg" style="width:100%" class="w3-hover-opacity" alt="Mines">
 							</a>
 						</div>
 
 						<div class="w3-col m3">
 							<a href="">
-								<img src="./img/logos/Claridge.jpg" style="width:100%" class="w3-hover-opacity" alt="Claridge">
+								<img src="./img/logos/Lannelongue.jpg" style="width:100%" class="w3-hover-opacity" alt="Lannelongue">
 							</a>
 						</div>
 					</div>
 				</div>
-				<div class="element 2">
-					<h3 class="w3-center">PARTENAIRES</h3>
+				<div class="space"><br /><hr /><br /></div>
+				<div class="element2">
+					<h3 style="color:#F16359" class="center">PARTENAIRES</h3>
 					<div id="conteneurChild">
 						<div class="w3-col m3">
 							<a href="">
-								<img src="./img/logos/Axis.jpg" style="width:100%" class="w3-hover-opacity" alt="Axis">
+								<img src="./img/logos/Philips.jpg" style="width:100%" class="w3-hover-opacity" alt="Philips">
 							</a>
 						</div>
 
 						<div class="w3-col m3">
 							<a href="">
-								<img src="./img/logos/Eona.jpg" style="width:100%" class="w3-hover-opacity" alt="Eona">
-							</a>
-						</div>
-
-						<div class="w3-col m3">
-							<a href="">
-								<img src="./img/logos/Anevia.jpg" style="width:100%" class="w3-hover-opacity" alt="Anevia">
+								<img src="./img/logos/Cognify.jpg" style="width:100%" class="w3-hover-opacity" alt="Cognify">
 							</a>
 						</div>
 					</div>
@@ -182,7 +179,7 @@
 					<div id="conteneurChild">
 						<div class="w3-col m3">
 							<a href="">
-								<img src="./img/logos/Philips.jpg" style="width:100%" class="w3-hover-opacity" alt="Philips">
+								<img src="./img/logos/Axis.jpg" style="width:100%" class="w3-hover-opacity" alt="Axis">
 							</a>
 						</div>
 
@@ -194,7 +191,7 @@
 
 						<div class="w3-col m3">
 							<a href="">
-								<img src="./img/logos/SeeTec.jpg" style="width:100%" class="w3-hover-opacity" alt="SeeTec">
+								<img src="./img/logos/Anevia.jpg" style="width:100%" class="w3-hover-opacity" alt="Anevia">
 							</a>
 						</div>
 					</div>
@@ -205,27 +202,27 @@
 		<!-- Third Parallax Image with Portfolio Text -->
 		<div class="img-3 w3-display-container w3-opacity-min">
 			<div class="w3-display-middle">
-				<span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+				<span class="w3-xxlarge w3-wide w3-text-white">CONTACT</span>
 			</div>
 		</div>
 
 		<!-- Container (Contact Section) -->
 		<div class="w3-content w3-container w3-padding-64" id="contact">
-			<h3 class="w3-center">WHERE I WORK</h3>
-			<p class="w3-center"><em>I'd love your feedback!</em></p>
+			<h3 class="center">COORDONNÉES</h3>
+			<p class="center"><em>"L'attention éclaire le regard par une simple prise de contact."</em></p>
 
 			<div class="w3-row w3-padding-32 w3-section">
 				<div class="w3-col m4 w3-container">
-					<img src="/w3images/map.jpg" class="w3-image w3-round" style="width:100%">
+					<img src="./img/Suresnes.jpg" class="w3-image w3-round" style="width:100%">
 				</div>
 				<div class="w3-col m8 w3-panel">
 					<div class="w3-large w3-margin-bottom">
-						<i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
-						<i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
-						<i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
+						<i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Suresnes, FR<br>
+						<i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Mobile: +33 6 07 74 35 82<br>
+						<i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: f.simon@stecom.fr<br>
 					</div>
-					<p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-					<form action="/action_page.php" target="_blank">
+					<p><em>Le service de messagerie est momentanément bloqué, veuillez passer par votre applications mail habituelle pour m'envoyer un message.<br>Merci.</em></p>
+					<form action="" target="_blank">
 						<div class="w3-row-padding" style="margin:0 -16px 8px -16px">
 							<div class="w3-half">
 								<input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
@@ -236,7 +233,7 @@
 						</div>
 						<input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
 						<button class="w3-button w3-black w3-right w3-section" type="submit">
-							<i class="fa fa-paper-plane"></i> SEND MESSAGE
+							<i class="fa fa-paper-plane"></i> ENVOYER
 						</button>
 					</form>
 				</div>
@@ -244,17 +241,26 @@
 		</div>
 
 		<!-- Footer -->
-		<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+		<footer class="center carnation-fill w3-padding-64 w3-opacity w3-hover-opacity-off">
 			<a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-			<div class="w3-xlarge w3-section">
+			<!-- <div class="w3-xlarge w3-section">
 				<i class="fa fa-facebook-official w3-hover-opacity"></i>
 				<i class="fa fa-instagram w3-hover-opacity"></i>
 				<i class="fa fa-snapchat w3-hover-opacity"></i>
 				<i class="fa fa-pinterest-p w3-hover-opacity"></i>
 				<i class="fa fa-twitter w3-hover-opacity"></i>
 				<i class="fa fa-linkedin w3-hover-opacity"></i>
-			</div>
+			</div> -->
 			<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 		</footer>
+		
+		
+		<script src="./js/particles.js"></script>
+		<script src="./js/app.js"></script>
+		<script src="./js/navBar.js"></script>
+		<!-- Language scripts -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="./js/translate.js"></script>
+		<script src="./js/translate-spe.js"></script>
 	</body>
 </html>
