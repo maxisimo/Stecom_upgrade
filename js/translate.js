@@ -14,7 +14,20 @@ var arrLang = {
 		'about-p7': 'Vidéosurveillance',
 		'about-p8': 'Contrôle d\'accès',
 		'about-p9': 'Services multimédias',
-		'successPartners': 'Partenaires'
+		'successPartners': 'Partenaires',
+		'successProjects': 'Projets',
+		'successClients': 'Clients Satisfaits',
+		'successSites': 'Chantiers',
+		'company': 'L\'ENTREPRISE',
+		'company-p1': 'Avec plus de 15ans d\'expérience et une situation financère solide,  STECOM est une société au capital de 100 000 €. L\'implantation stratégique de ses bureaux parisien lui confère une excellente réactivité vers ses principaux clients et un confort de travail unique.',
+		'company-p1-2': 'Grâce à ses compétences en ingénierie électrique, électronique, informatique et télécoms, STECOM a su conquérir des marchés tels que :',
+		'company-p1-3': 'hôtels, banques, assurances, SSII, parkings... où la sécurité des biens et des personnes est l\'une des priorités du moment.',
+		'companyPartners': 'PARTENAIRES',
+		'contactInformations': 'COORDONNEES',
+		'contact-p1': 'Le service de messagerie est momentanément bloqué, veuillez passer par votre applications mail habituelle pour m\'envoyer un message.',
+		'contactThanks': 'Merci.',
+		'contactSend': 'ENVOYER',
+		'footerTop': 'Revenir au début'
 	},
 	'en': {
 		'navBarHome': 'HOME',
@@ -31,7 +44,20 @@ var arrLang = {
 		'about-p7': 'Video surveillance',
 		'about-p8': 'Access control',
 		'about-p9': 'Multimedia services',
-		'successPartners': 'Partners'
+		'successPartners': 'Partners',
+		'successProjects': 'Projects',
+		'successClients': 'Happy Clients',
+		'successSites': 'Sites',
+		'company': 'COMPANY',
+		'company-p1': 'With more than 15 years of experience and a solid financial situation, STECOM is a company with a capital of 100,000 €. The strategic location of its Parisian offices gives it excellent responsiveness to its main customers and unique working comfort.',
+		'company-p1-2': 'Thanks to its skills in electrical engineering, electronic, IT and telecoms, STECOM has been able to conquer markets such as:',
+		'company-p1-3': 'hotels, banks, insurance, IT services companies, car parks ... where the the safety of property and people is one of the current priorities.',
+		'companyPartners': 'PARTNERS',
+		'contactInformations': 'WHERE I WORK',
+		'contact-p1': 'The messaging service is temporarily blocked, please use your usual email applications to send me a message.',
+		'contactThanks': 'Thanks.',
+		'contactSend': 'SEND',
+		'footerTop': 'To the top'
 	}
 };
 
@@ -46,7 +72,14 @@ $(function() {
 		$("p").filter(".about-p7").html('<i class="fa fa-video-camera"></i> ' + arrLang[lang]["about-p7"]);
 		$("p").filter(".about-p8").html('<i class="fa fa-laptop"></i> ' + arrLang[lang]["about-p8"]);
 		$("p").filter(".about-p9").html('<i class="fa fa-tv"></i> ' + arrLang[lang]["about-p9"]);
-		$("div").filter(".partners").html('<span class="w3-xlarge">6+</span><br>' + arrLang[lang]["successPartners"]);
+		$("div").filter(".partners").html('<span class="w3-xlarge">14+</span><br>' + arrLang[lang]["successPartners"]);
+		$("div").filter(".projects").html('<span class="w3-xlarge">55+</span><br>' + arrLang[lang]["successProjects"]);
+		$("div").filter(".clients").html('<span class="w3-xlarge">89+</span><br>' + arrLang[lang]["successClients"]);
+		$("div").filter(".sites").html('<span class="w3-xlarge">150+</span><br>' + arrLang[lang]["successSites"]);
+		$("p").filter(".company-p1").html(arrLang[lang]["company-p1"] + '<br />' + arrLang[lang]["company-p1-2"] + '<br />' + arrLang[lang]["company-p1-3"]);
+		$("p").filter(".contact-p1").html('<em>' + arrLang[lang]["contact-p1"] + '</em>');
+		$("button").filter(".contactSend").html('<i class="fa fa-paper-plane"></i> ' + arrLang[lang]["contactSend"]);
+		$("a").filter(".footerTop").html('<i class="fa fa-arrow-up w3-margin-right"></i>' + arrLang[lang]["footerTop"]);
 		$('.lang').each(function(index, item) {
 			$(this).filter(".lang").text(arrLang[lang][$(this).attr('key')]);
 		});
